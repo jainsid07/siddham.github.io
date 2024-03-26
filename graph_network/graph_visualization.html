@@ -26,17 +26,7 @@
         }
 
         .link {
-            stroke: green;
-            stroke-opacity: 0.6;
-        }
-
-        .rev-contacts-link {
-            stroke: blue;
-            stroke-opacity: 0.6;
-        }
-
-        .contact-link {
-            stroke: green;
+            stroke: #999;
             stroke-opacity: 0.6;
         }
 
@@ -64,16 +54,6 @@
     <script src="https://d3js.org/d3.v6.min.js"></script> <!-- Include D3.js from CDN -->
 </head>
 <body>
-
-    <div>
-        <label for="relationship-select">Select Relationship:</label>
-        <select id="relationship-select">
-            <option value="all">All</option>
-            <option value="rev_contacts">Reverse Contacts</option>
-            <option value="contacts">Contacts</option>
-        </select>
-    </div>
-
     <div id="graph-container"></div>
 
     <div class="tooltip"></div>
@@ -88,7 +68,7 @@
 
     <script>
         // Load and render the graph using D3.js
-        d3.json('subgraph.json').then(function(graphData) {
+        d3.json('subgraph1.json').then(function(graphData) {
             // Create a SVG container
             const svg = d3.select('#graph-container')
                 .append('svg')
@@ -109,7 +89,7 @@
             const links = svg.selectAll('.link')
                 .data(graphData.links)
                 .enter().append('line')
-                .attr('class', d => `link ${d.relationship === 'rev_contacts' ? 'rev-contacts-link' : 'contact-link'}`)                
+                .attr('class', 'link')
                 .attr('marker-end', d => isDirected(graphData, d.source, d.target) ? 'url(#arrow)' : '')
                 .on('mouseover', showTooltip)
                 .on('mouseout', hideTooltip);
@@ -154,8 +134,8 @@
                 const tooltip = d3.select('.tooltip');
                 tooltip.style('opacity', 1);
 
-                if ('user_name' in d) {
-                    tooltip.html(`Node ID: ${d.id}<br>User Name: ${d.user_name}`)
+                if ('name' in d) {
+                    tooltip.html(`Edge Name: ${d.name}`)
                         .style('left', `${event.pageX + 10}px`)
                         .style('top', `${event.pageY - 10}px`);
                 } else {
@@ -206,8 +186,6 @@
             function zoomed(event) {
                 svg.attr('transform', event.transform);
             }
-
-            
         });
     </script>
 </body>
