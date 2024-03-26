@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Visualization</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #graph-container {
+            width: 100%;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .node {
+            fill: lightblue;
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        .link {
+            stroke: green;
+            stroke-opacity: 0.6;
+        }
+
+        .rev-contacts-link {
+            stroke: blue;
+            stroke-opacity: 0.6;
+        }
+
+        .contact-link {
+            stroke: green;
+            stroke-opacity: 0.6;
+        }
+
+        .arrow {
+            fill: #999;
+        }
+
+        .edge-label {
+            font-size: 10px;
+            pointer-events: none;
+        }
+
+        .tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px;
+            border-radius: 3px;
+            font-size: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+    </style>
+    <script src="https://d3js.org/d3.v6.min.js"></script> <!-- Include D3.js from CDN -->
+</head>
+<body>
+
+    <div>
+        <label for="relationship-select">Select Relationship:</label>
+        <select id="relationship-select">
+            <option value="all">All</option>
+            <option value="rev_contacts">Reverse Contacts</option>
+            <option value="contacts">Contacts</option>
+        </select>
+    </div>
+
+    <div id="graph-container"></div>
+
+    <div class="tooltip"></div>
+
+    <svg style="display: none;">
+        <defs>
+            <marker id="arrow" viewBox="0 -5 10 10" refX="8" refY="0" markerWidth="6" markerHeight="6" orient="auto">
+                <path class="arrow" d="M0,-5L10,0L0,5"></path>
+            </marker>
+        </defs>
+    </svg>
+
+    <script>
+        // Load and render the graph using D3.js
+        d3.json('subgraph.json').then(function(graphData) {
+            // Create a SVG container
+            const svg = d3.select('#graph-container')
+                .append('svg')
+                .attr('width', '100%')
+                .attr('height', '100%')
+                .call(d3.zoom()
+                    .scaleExtent([0.1, 3])
+                    .on('zoom', zoomed))
+                .append('g');
+
+            // Define the simulation
+            const simulation = d3.forceSimulation(graphData.nodes)
+                .force('link', d3.forceLink(graphData.links).id(d => d.id).distance(150)) // Increase the distance
+                .force('charge', d3.forceManyBody().strength(-500)) // Increase repulsion
+                .force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2));
+
+            // Create links with arrowheads
+            const links = svg.selectAll('.link')
+                .data(graphData.links)
+                .enter().append('line')
+                .attr('class', d => `link ${d.relationship === 'rev_contacts' ? 'rev-contacts-link' : 'contact-link'}`)                
+                .attr('marker-end', d => isDirected(graphData, d.source, d.target) ? 'url(#arrow)' : '')
+                .on('mouseover', showTooltip)
+                .on('mouseout', hideTooltip);
+
+            // Create text labels for edge names (hidden by default)
+            const edgeLabels = svg.selectAll('.edge-label')
+                .data(graphData.links)
+                .enter().append('text')
+                .attr('class', 'edge-label')
+                .attr('text-anchor', 'middle')
+                .style('visibility', 'hidden');
+
+            // Create nodes
+            const nodes = svg.selectAll('.node')
+                .data(graphData.nodes)
+                .enter().append('circle')
+                .attr('class', 'node')
+                .attr('r', 12)
+                .on('mouseover', showTooltip)
+                .on('mouseout', hideTooltip);
+
+            // Update node and link positions
+            simulation.on('tick', () => {
+                links
+                    .attr('x1', d => d.source.x)
+                    .attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x)
+                    .attr('y2', d => d.target.y);
+
+                nodes
+                    .attr('cx', d => d.x)
+                    .attr('cy', d => d.y);
+
+                edgeLabels
+                    .attr('x', d => (d.source.x + d.target.x) / 2)
+                    .attr('y', d => (d.source.y + d.target.y) / 2)
+                    .style('visibility', 'visible');
+            });
+
+            // Function to show tooltip
+            function showTooltip(event, d) {
+                const tooltip = d3.select('.tooltip');
+                tooltip.style('opacity', 1);
+
+                if ('user_name' in d) {
+                    tooltip.html(`Node ID: ${d.id}<br>User Name: ${d.user_name}`)
+                        .style('left', `${event.pageX + 10}px`)
+                        .style('top', `${event.pageY - 10}px`);
+                } else {
+                    tooltip.html(`Node ID: ${d.id}`)
+                        .style('left', `${event.pageX + 10}px`)
+                        .style('top', `${event.pageY - 10}px`);
+                }
+            }
+
+            // Function to hide tooltip
+            function hideTooltip() {
+                d3.select('.tooltip').style('opacity', 0);
+            }
+
+            // Function to check if an edge is directed from source to target
+            function isDirected(graphData, sourceId, targetId) {
+                const sourceNode = graphData.nodes.find(node => node.id === sourceId);
+                const targetNode = graphData.nodes.find(node => node.id === targetId);
+
+                if (!sourceNode || !targetNode) {
+                    return false;
+                }
+
+                // Check if target is reachable from source
+                const visited = new Set();
+                const queue = [sourceNode];
+
+                while (queue.length > 0) {
+                    const current = queue.shift();
+
+                    if (current === targetNode) {
+                        return true;
+                    }
+
+                    visited.add(current);
+
+                    for (const link of graphData.links) {
+                        if (link.source === current.id && !visited.has(link.target)) {
+                            queue.push(graphData.nodes.find(node => node.id === link.target));
+                        }
+                    }
+                }
+
+                return false;
+            }
+
+            // Function to zoom and pan
+            function zoomed(event) {
+                svg.attr('transform', event.transform);
+            }
+
+            
+        });
+    </script>
+</body>
+</html>
