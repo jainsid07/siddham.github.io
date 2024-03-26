@@ -1,0 +1,481 @@
+{
+    "nodes": [
+        {
+            "id": "267326a0-3743-11ec-ba49-8b1e5578f5b6"
+        },
+        {
+            "id": "4fa36c90-a2c5-11ec-8fe2-d5b66ac7fb72"
+        },
+        {
+            "id": "267053f0-7e72-11ec-a11b-2f541afaea88"
+        },
+        {
+            "id": "263e4dd0-9bc6-11ec-904e-a7555c682b40"
+        },
+        {
+            "id": "263d5500-efdc-11ec-b23b-e952efe606f0"
+        },
+        {
+            "id": "31835ac0-e881-11ec-974c-9f6eca2e8e1e"
+        },
+        {
+            "id": "23377cf0-7818-11ec-8162-8df20158b9af"
+        },
+        {
+            "id": "31c9c160-c589-11ec-8aed-971636558bc4"
+        },
+        {
+            "id": "3d82a990-de61-11ec-bc68-c34520822551"
+        },
+        {
+            "id": "2417a590-979a-11ec-851e-6901917c07fe"
+        },
+        {
+            "id": "3b84de80-f9d0-11ec-8584-2b1e6b404219"
+        },
+        {
+            "id": "2c803e70-4fd2-11ea-bee4-dda25be45998"
+        },
+        {
+            "id": "4f70aab0-5c22-11ec-8c03-259387227b3a"
+        },
+        {
+            "id": "4273dc60-0901-11ed-bc65-5946bb5a8afa"
+        },
+        {
+            "id": "311d8c80-24b6-11eb-8075-2d2e6fe4c9c0"
+        },
+        {
+            "id": "35144c90-ec59-11ec-8474-f55b0c67e9c5"
+        },
+        {
+            "id": "3afef4d0-3871-11ec-84ae-dfdaa19d6dee"
+        },
+        {
+            "id": "4e75daa0-5348-11ec-9c82-2f64122f9e68"
+        },
+        {
+            "id": "47c88190-b260-11ec-b699-e70b144e1c2f"
+        },
+        {
+            "id": "2a583620-834c-11ec-9c5c-7dd7278b9aa9"
+        },
+        {
+            "id": "23dc6c00-881d-11ec-a81f-ff15d4b173b4"
+        },
+        {
+            "id": "472f6730-2679-11ec-b9b8-d9ccc3de35df"
+        },
+        {
+            "id": "4110cc30-64b9-11ec-8a8e-5f8b319eaec5"
+        },
+        {
+            "id": "7afddab0-fb5d-11ec-8324-a76d5aedbff9"
+        },
+        {
+            "id": "3c63fcf0-c7d5-11ec-a112-83e26deb6459"
+        },
+        {
+            "id": "2a3fd7e0-a806-11ec-b3d6-edcbdc1ae3b5"
+        },
+        {
+            "id": "6b4eccb0-4e96-11ec-aa7a-5d8d352eefe8"
+        },
+        {
+            "id": "25595040-2cd1-11ec-9b2e-61db4acfcb20"
+        },
+        {
+            "id": "3f586650-c30a-11ec-8ac8-378db267b0d8"
+        },
+        {
+            "id": "4e6d9860-67f0-11ec-8e5f-1d27ac4303bf"
+        },
+        {
+            "id": "227a3ab0-388e-11ec-84ae-dfdaa19d6dee"
+        },
+        {
+            "id": "4b078a70-16e5-11ec-aa70-af4bd7220efc"
+        },
+        {
+            "id": "492bb860-82bb-11ec-8f35-23e5b3015690"
+        },
+        {
+            "id": "2973c580-c145-11ec-a328-d15a803f695d"
+        },
+        {
+            "id": "491f50f0-2fe8-11ec-b97d-5bf7caf6dfde"
+        }
+    ],
+    "links": [
+        {
+            "source": "4fa36c90-a2c5-11ec-8fe2-d5b66ac7fb72",
+            "target": "267053f0-7e72-11ec-a11b-2f541afaea88",
+            "name": "Rushendra Clg"
+        },
+        {
+            "source": "4fa36c90-a2c5-11ec-8fe2-d5b66ac7fb72",
+            "target": "23dc6c00-881d-11ec-a81f-ff15d4b173b4",
+            "name": "Rushendra Clg Frn"
+        },
+        {
+            "source": "4fa36c90-a2c5-11ec-8fe2-d5b66ac7fb72",
+            "target": "2417a590-979a-11ec-851e-6901917c07fe",
+            "name": "Rushendra Clg"
+        },
+        {
+            "source": "4fa36c90-a2c5-11ec-8fe2-d5b66ac7fb72",
+            "target": "6b4eccb0-4e96-11ec-aa7a-5d8d352eefe8",
+            "name": "Rushender"
+        },
+        {
+            "source": "263e4dd0-9bc6-11ec-904e-a7555c682b40",
+            "target": "267326a0-3743-11ec-ba49-8b1e5578f5b6",
+            "name": "Deepika Dhru"
+        },
+        {
+            "source": "263e4dd0-9bc6-11ec-904e-a7555c682b40",
+            "target": "472f6730-2679-11ec-b9b8-d9ccc3de35df",
+            "name": "Deepika Btech"
+        },
+        {
+            "source": "263e4dd0-9bc6-11ec-904e-a7555c682b40",
+            "target": "4e6d9860-67f0-11ec-8e5f-1d27ac4303bf",
+            "name": "Deepss"
+        },
+        {
+            "source": "263e4dd0-9bc6-11ec-904e-a7555c682b40",
+            "target": "492bb860-82bb-11ec-8f35-23e5b3015690",
+            "name": "P. Deepika Bt 2yr Ece"
+        },
+        {
+            "source": "263e4dd0-9bc6-11ec-904e-a7555c682b40",
+            "target": "491f50f0-2fe8-11ec-b97d-5bf7caf6dfde",
+            "name": "Deepika ECE 3rd"
+        },
+        {
+            "source": "263d5500-efdc-11ec-b23b-e952efe606f0",
+            "target": "31835ac0-e881-11ec-974c-9f6eca2e8e1e",
+            "name": "F Srikanth SNHS"
+        },
+        {
+            "source": "263d5500-efdc-11ec-b23b-e952efe606f0",
+            "target": "4e75daa0-5348-11ec-9c82-2f64122f9e68",
+            "name": "Frd Sri Kanth Prcm"
+        },
+        {
+            "source": "31835ac0-e881-11ec-974c-9f6eca2e8e1e",
+            "target": "3f586650-c30a-11ec-8ac8-378db267b0d8",
+            "name": "Chandu Clg 2"
+        },
+        {
+            "source": "3d82a990-de61-11ec-bc68-c34520822551",
+            "target": "3d82a990-de61-11ec-bc68-c34520822551",
+            "name": "SBR"
+        },
+        {
+            "source": "2417a590-979a-11ec-851e-6901917c07fe",
+            "target": "267053f0-7e72-11ec-a11b-2f541afaea88",
+            "name": "Ajay Reddy Clg Ptc\ud83d\ude02"
+        },
+        {
+            "source": "2417a590-979a-11ec-851e-6901917c07fe",
+            "target": "23377cf0-7818-11ec-8162-8df20158b9af",
+            "name": "Ajay Kts"
+        },
+        {
+            "source": "2417a590-979a-11ec-851e-6901917c07fe",
+            "target": "23dc6c00-881d-11ec-a81f-ff15d4b173b4",
+            "name": "Ajay Clg Frn"
+        },
+        {
+            "source": "2417a590-979a-11ec-851e-6901917c07fe",
+            "target": "6b4eccb0-4e96-11ec-aa7a-5d8d352eefe8",
+            "name": "Ajay Clg"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "23377cf0-7818-11ec-8162-8df20158b9af",
+            "name": "Praveen"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "23dc6c00-881d-11ec-a81f-ff15d4b173b4",
+            "name": "Praveen Clg"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "2a583620-834c-11ec-9c5c-7dd7278b9aa9",
+            "name": "Praveen Clg"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "2417a590-979a-11ec-851e-6901917c07fe",
+            "name": "Praveen Clg"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "263d5500-efdc-11ec-b23b-e952efe606f0",
+            "name": "Praveen Schl"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "2973c580-c145-11ec-a328-d15a803f695d",
+            "name": "Praveen Vdc"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "267053f0-7e72-11ec-a11b-2f541afaea88",
+            "name": "Praveen CLG. \ud83e\udd29"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "2c803e70-4fd2-11ea-bee4-dda25be45998",
+            "name": "Praveen"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "31835ac0-e881-11ec-974c-9f6eca2e8e1e",
+            "name": "F Praveen SNHS"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "31c9c160-c589-11ec-8aed-971636558bc4",
+            "name": "Praveen Clg"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "name": "Pichi Sulli Gad"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "3c63fcf0-c7d5-11ec-a112-83e26deb6459",
+            "name": "Praveen@IC"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "3f586650-c30a-11ec-8ac8-378db267b0d8",
+            "name": "Praveen\ud83d\udc6c\ud83c\udffb"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "3d82a990-de61-11ec-bc68-c34520822551",
+            "name": "Praveen Vdc Hyd"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "47c88190-b260-11ec-b699-e70b144e1c2f",
+            "name": "Praveen V Clg "
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "4f70aab0-5c22-11ec-8c03-259387227b3a",
+            "name": "Praveen Gotam Nagar"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "4fa36c90-a2c5-11ec-8fe2-d5b66ac7fb72",
+            "name": "Praveen \u2764\ufe0f "
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "4e75daa0-5348-11ec-9c82-2f64122f9e68",
+            "name": "Frd Praveen Ptc"
+        },
+        {
+            "source": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "target": "6b4eccb0-4e96-11ec-aa7a-5d8d352eefe8",
+            "name": "Praveen"
+        },
+        {
+            "source": "4273dc60-0901-11ed-bc65-5946bb5a8afa",
+            "target": "25595040-2cd1-11ec-9b2e-61db4acfcb20",
+            "name": "Varun"
+        },
+        {
+            "source": "4273dc60-0901-11ed-bc65-5946bb5a8afa",
+            "target": "311d8c80-24b6-11eb-8075-2d2e6fe4c9c0",
+            "name": "VENKAT"
+        },
+        {
+            "source": "4273dc60-0901-11ed-bc65-5946bb5a8afa",
+            "target": "35144c90-ec59-11ec-8474-f55b0c67e9c5",
+            "name": "Varun MLRS "
+        },
+        {
+            "source": "4273dc60-0901-11ed-bc65-5946bb5a8afa",
+            "target": "4110cc30-64b9-11ec-8a8e-5f8b319eaec5",
+            "name": "Varun MLRS "
+        },
+        {
+            "source": "35144c90-ec59-11ec-8474-f55b0c67e9c5",
+            "target": "35144c90-ec59-11ec-8474-f55b0c67e9c5",
+            "name": "Vivek Goud "
+        },
+        {
+            "source": "35144c90-ec59-11ec-8474-f55b0c67e9c5",
+            "target": "4110cc30-64b9-11ec-8a8e-5f8b319eaec5",
+            "name": "Vivek Goud"
+        },
+        {
+            "source": "3afef4d0-3871-11ec-84ae-dfdaa19d6dee",
+            "target": "4b078a70-16e5-11ec-aa70-af4bd7220efc",
+            "name": "Dhodu Vamshi Clg"
+        },
+        {
+            "source": "4e75daa0-5348-11ec-9c82-2f64122f9e68",
+            "target": "4e75daa0-5348-11ec-9c82-2f64122f9e68",
+            "name": "My"
+        },
+        {
+            "source": "47c88190-b260-11ec-b699-e70b144e1c2f",
+            "target": "47c88190-b260-11ec-b699-e70b144e1c2f",
+            "name": "My Personal  "
+        },
+        {
+            "source": "2a583620-834c-11ec-9c5c-7dd7278b9aa9",
+            "target": "2a583620-834c-11ec-9c5c-7dd7278b9aa9",
+            "name": "91829 58912"
+        },
+        {
+            "source": "2a583620-834c-11ec-9c5c-7dd7278b9aa9",
+            "target": "267053f0-7e72-11ec-a11b-2f541afaea88",
+            "name": "Vijay Clg"
+        },
+        {
+            "source": "23dc6c00-881d-11ec-a81f-ff15d4b173b4",
+            "target": "23dc6c00-881d-11ec-a81f-ff15d4b173b4",
+            "name": "+917993116164"
+        },
+        {
+            "source": "23dc6c00-881d-11ec-a81f-ff15d4b173b4",
+            "target": "2a583620-834c-11ec-9c5c-7dd7278b9aa9",
+            "name": "Sanjay Clg"
+        },
+        {
+            "source": "23dc6c00-881d-11ec-a81f-ff15d4b173b4",
+            "target": "267053f0-7e72-11ec-a11b-2f541afaea88",
+            "name": "SanjY Clg"
+        },
+        {
+            "source": "23dc6c00-881d-11ec-a81f-ff15d4b173b4",
+            "target": "2c803e70-4fd2-11ea-bee4-dda25be45998",
+            "name": "Sanjay"
+        },
+        {
+            "source": "23dc6c00-881d-11ec-a81f-ff15d4b173b4",
+            "target": "4f70aab0-5c22-11ec-8c03-259387227b3a",
+            "name": "Sanjay Fnd Ptc"
+        },
+        {
+            "source": "472f6730-2679-11ec-b9b8-d9ccc3de35df",
+            "target": "472f6730-2679-11ec-b9b8-d9ccc3de35df",
+            "name": "Jaanu"
+        },
+        {
+            "source": "7afddab0-fb5d-11ec-8324-a76d5aedbff9",
+            "target": "227a3ab0-388e-11ec-84ae-dfdaa19d6dee",
+            "name": "Adarsh Bachpan Dosth"
+        },
+        {
+            "source": "7afddab0-fb5d-11ec-8324-a76d5aedbff9",
+            "target": "2a3fd7e0-a806-11ec-b3d6-edcbdc1ae3b5",
+            "name": "Adrash"
+        },
+        {
+            "source": "7afddab0-fb5d-11ec-8324-a76d5aedbff9",
+            "target": "263e4dd0-9bc6-11ec-904e-a7555c682b40",
+            "name": "Vamshi *C* Telapur"
+        },
+        {
+            "source": "7afddab0-fb5d-11ec-8324-a76d5aedbff9",
+            "target": "3afef4d0-3871-11ec-84ae-dfdaa19d6dee",
+            "name": "Adarsh \u2728\u2728"
+        },
+        {
+            "source": "7afddab0-fb5d-11ec-8324-a76d5aedbff9",
+            "target": "3b84de80-f9d0-11ec-8584-2b1e6b404219",
+            "name": "Adarsh Mudhiraj"
+        },
+        {
+            "source": "7afddab0-fb5d-11ec-8324-a76d5aedbff9",
+            "target": "4273dc60-0901-11ed-bc65-5946bb5a8afa",
+            "name": "Adrash "
+        },
+        {
+            "source": "3c63fcf0-c7d5-11ec-a112-83e26deb6459",
+            "target": "267053f0-7e72-11ec-a11b-2f541afaea88",
+            "name": "Bamardhi Sridhar"
+        },
+        {
+            "source": "3c63fcf0-c7d5-11ec-a112-83e26deb6459",
+            "target": "31c9c160-c589-11ec-8aed-971636558bc4",
+            "name": "Sridhar CLG"
+        },
+        {
+            "source": "3c63fcf0-c7d5-11ec-a112-83e26deb6459",
+            "target": "6b4eccb0-4e96-11ec-aa7a-5d8d352eefe8",
+            "name": "Sridhar Ptak"
+        },
+        {
+            "source": "2a3fd7e0-a806-11ec-b3d6-edcbdc1ae3b5",
+            "target": "2a3fd7e0-a806-11ec-b3d6-edcbdc1ae3b5",
+            "name": "My 2"
+        },
+        {
+            "source": "25595040-2cd1-11ec-9b2e-61db4acfcb20",
+            "target": "227a3ab0-388e-11ec-84ae-dfdaa19d6dee",
+            "name": "Varun Mig"
+        },
+        {
+            "source": "25595040-2cd1-11ec-9b2e-61db4acfcb20",
+            "target": "311d8c80-24b6-11eb-8075-2d2e6fe4c9c0",
+            "name": "Jio Number"
+        },
+        {
+            "source": "4e6d9860-67f0-11ec-8e5f-1d27ac4303bf",
+            "target": "267326a0-3743-11ec-ba49-8b1e5578f5b6",
+            "name": "Liki"
+        },
+        {
+            "source": "4e6d9860-67f0-11ec-8e5f-1d27ac4303bf",
+            "target": "472f6730-2679-11ec-b9b8-d9ccc3de35df",
+            "name": "Likhita Btech2"
+        },
+        {
+            "source": "4e6d9860-67f0-11ec-8e5f-1d27ac4303bf",
+            "target": "491f50f0-2fe8-11ec-b97d-5bf7caf6dfde",
+            "name": "R17 Likitha Cse"
+        },
+        {
+            "source": "4b078a70-16e5-11ec-aa70-af4bd7220efc",
+            "target": "4b078a70-16e5-11ec-aa70-af4bd7220efc",
+            "name": "My no Dinesh"
+        },
+        {
+            "source": "492bb860-82bb-11ec-8f35-23e5b3015690",
+            "target": "267326a0-3743-11ec-ba49-8b1e5578f5b6",
+            "name": "Sai Ece"
+        },
+        {
+            "source": "492bb860-82bb-11ec-8f35-23e5b3015690",
+            "target": "472f6730-2679-11ec-b9b8-d9ccc3de35df",
+            "name": "Sai ECE AIET"
+        },
+        {
+            "source": "492bb860-82bb-11ec-8f35-23e5b3015690",
+            "target": "4e6d9860-67f0-11ec-8e5f-1d27ac4303bf",
+            "name": "sai Kiran"
+        },
+        {
+            "source": "492bb860-82bb-11ec-8f35-23e5b3015690",
+            "target": "492bb860-82bb-11ec-8f35-23e5b3015690",
+            "name": "My Jio"
+        },
+        {
+            "source": "2973c580-c145-11ec-a328-d15a803f695d",
+            "target": "2973c580-c145-11ec-a328-d15a803f695d",
+            "name": "Lokesh Clg Friend"
+        }
+    ]
+}
